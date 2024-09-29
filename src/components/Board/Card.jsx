@@ -25,7 +25,6 @@ const Card = ({ card, userData }) => {
     <div className={styles.card}>
       <div className={styles.cardhead}>
         <div style={{ color: "#8c8b8b" }}>{card.id}</div>
-        <p>okay</p>
       </div>
       <div className={styles.title}>
         <img
