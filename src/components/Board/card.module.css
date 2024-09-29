@@ -1,0 +1,79 @@
+.card {
+  padding: 1vh 2vw;
+  border-radius: 7px;
+  background-color: #ffffff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 0.5vh;
+  min-width: 250px;
+  max-width: 100%;
+}
+
+.cardhead {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 0.4vw;
+}
+
+.checkbox {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+.cardfooter {
+  display: flex;
+  gap: 0.4vw;
+  margin-top: 8px;
+}
+
+.tags {
+  display: flex;
+  align-items: center;
+  gap: 0.3vw;
+  color: #8c8b8b;
+  font-size: 13px;
+}
+
+.cardfooter img {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 2px;
+}
+
+.cardfooter .tags {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 2px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: 2vh 3vw;
+  }
+
+  .title {
+    gap: 1vw;
+  }
+
+  .tags {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 3vh 4vw;
+    gap: 2vh;
+  }
+
+  .title {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

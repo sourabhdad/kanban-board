@@ -1,0 +1,78 @@
+.navbar {
+  padding: 2vh 5vw;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: rgba(99, 99, 99, 0.08) 0px 2px 8px;
+  position: relative;
+}
+
+.dropdownButton {
+  cursor: pointer;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  background-color: #fff;
+  padding: 4px 6px;
+  border-radius: 6px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px;
+}
+
+.dropdownButton img {
+  margin-left: 1vw;
+}
+
+.dropdownContent {
+  position: absolute;
+  top: 7vh;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px;
+  z-index: 1;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdownField label {
+  color: #8c8b8b;
+  font-size: 1.5vh;
+}
+
+.dropdownField select {
+  display: flex;
+  border: 1px solid #ccc;
+  background-color: white;
+  border-radius: 5px;
+  padding: 0.5vh 1vw;
+  font-size: 1.6vh;
+}
+
+.dropdownField {
+  padding: 10px;
+  width: 15vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 2vh 3vw;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .dropdownContent {
+    top: 9vh;
+  }
+
+  .dropdownField {
+    width: 50vw;
+  }
+
+  .dropdownButton {
+    padding: 2vh 3vw;
+  }
+}

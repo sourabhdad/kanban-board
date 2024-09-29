@@ -1,0 +1,15 @@
+.boardContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 4vh;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+  .boardContainer {
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 4vh;
+  }
+}

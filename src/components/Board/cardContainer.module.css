@@ -1,0 +1,54 @@
+.cardContainer {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  margin: 0;
+  padding: 10px;
+  flex: 1;
+  min-width: 0;
+}
+
+.cardContainerTitle {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 2.5vh;
+}
+
+.image {
+  width: 16px;
+  height: 16px;
+  object-fit: cover;
+}
+
+.headingLeft {
+  display: flex;
+  gap: 0.7vw;
+  align-items: center;
+}
+
+.options {
+  display: flex;
+  gap: 0.5vw;
+  margin-right: 1vw;
+}
+
+@media (max-width: 1024px) {
+  .cardContainer {
+    min-width: 30vw;
+    padding: 3vh 3vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .cardContainer {
+    min-width: 100%;
+    padding: 4vh 4vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .cardContainer {
+    gap: 3vh;
+  }
+}
